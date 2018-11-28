@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}
+Titulo da pagina
+{% endblock %}
+
+{% block body %}
+<h1>EAE GALERA</h1>
+<p>hello world</p>
+<ul>
+{% for letra in letras %}
+    {% if letra != 'a' %}
+        <li>{{letra}}</li>
+    {% endif %}
+{% endfor %}
+</ul>
+{% endblock %}
