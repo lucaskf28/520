@@ -39,13 +39,22 @@ class Conta():
     def __str__(self):
         return 'conta: {} saldo: {}'.format(self.conta, self.saldo)
 
+class Poupanca(Conta):
+    def __init(self, n_cont, saldo=0):
+        super().__init__(n_cont, saldo)
+        self.taxa_juros = 0.007
+
+    def renderjuros(self):
+        self.saldo += self.saldo * self.taxa_juros
+
 c1 = Conta('123', 1000)
 c2 = Conta('456', 2500)
 
 c1.sacar(300)
 c1.depositar(500)
+c2.sacar
 
-c1.transferir(350,c1)
+c1.transferir(350,c2)
 
-print("conta: {}, Saldo:{}".format(c1.conta, c1.saldo))
-print("conta: {}, Saldo:{}".format(c2.conta, c2.saldo))
+#print("conta: {}, Saldo:{}".format(c1.conta, c1.saldo))
+#print("conta: {}, Saldo:{}".format(c2.conta, c2.saldo))
