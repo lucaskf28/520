@@ -2,7 +2,8 @@
 from flask import Flask, jsonify, redirect, request, Response, make_response
 import requests
 import json
-from modulos.usuarios import usuario
+#from modulos.usuarios import usuario
+from modulos.usuarios2 import usuario
 from modulos.view import view
 
 app = Flask(__name__)
