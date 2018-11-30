@@ -1,0 +1,18 @@
+docker ps
+
+colocar usuario no grupo docker pra nao precisar  usar o sudo
+sudo usermod -aG docker developer
+
+docker ps -a
+docker images
+docker pull ubuntu
+docker run -dti --name lucas ubuntu bash
+
+logar no bash de criacao do container, quando sair mata a nao ser q de ctrl P ctrl Q
+docker attach lucas
+docker exec lucas
+
+
+
+docker pull jupyter/datascience-notebook
+python:alpine
